@@ -17,7 +17,7 @@ export default function Layout({
         <meta name="description" content="Ramsey Reps" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex min-h-screen flex-col justify-between">
+      <div className="flex min-h-screen flex-col">
         <header>
           <nav className="flex h-20 justify-between items-center px-4">
             <Link className="text-lg font-bold" href="/">

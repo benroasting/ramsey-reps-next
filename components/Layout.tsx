@@ -30,9 +30,6 @@ export default function Layout({
               />
             </Link>
             <div>
-              <Link className="p-5" href="/add-reps">
-                Add Reps
-              </Link>
               <Link className="p-5" href="/login">
                 Login
               </Link>

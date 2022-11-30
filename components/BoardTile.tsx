@@ -8,7 +8,7 @@ const BoardTile = ({ user }: { user: UserType }) => {
         {user.firstName} {user.lastName}
       </h3>
       <h3 className="mx-3">{user.teamName}</h3>
-      <h3 className="mx-3">Push Ups: {user.pushUpReps}</h3>
+      <h3 className="mx-3">Exercise: {user.pushUpReps}</h3>
     </div>
   );
 };

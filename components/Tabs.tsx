@@ -20,7 +20,7 @@ const Tabs = () => {
   };
   return (
     <div className="TabContainer">
-      <ul className="TaNav">
+      <ul className="TabNav flex justify-center mb-4">
         <li
           className={activeTab === "pushUp" ? "active" : ""}
           onClick={pushUpHandler}
@@ -40,9 +40,10 @@ const Tabs = () => {
           Squats
         </li>
       </ul>
-      <div className="TabBody">
+      <hr className="flex m-auto h-1 w-1/4 rounded-2xl border-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-4" />
+      <div className="TabBody flex m-auto mb-3">
         {(() => {
-          switch (tab) {
+          switch (activeTab) {
             case "pushUp":
               return <PushUpTab />;
             case "sitUp":

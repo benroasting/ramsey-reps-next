@@ -15,7 +15,7 @@ export type UserType = {
 
 const Board = (users: Users) => {
   return (
-    <div className="bg-zinc-700 rounded-2xl p-1">
+    <div className=" bg-zinc-700 rounded-2xl p-2">
       <div className="p-3 font-bold text-lg mb-1">Title</div>
       {users.users.map((user) => {
         return <BoardTile user={user} key={user.userId} />;

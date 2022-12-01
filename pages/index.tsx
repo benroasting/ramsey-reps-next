@@ -23,8 +23,11 @@ export default function Home() {
         />
         <hr className="flex m-auto h-1 w-1/4 rounded-2xl border-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-4" />
         <h1>The {exercise.name} Leaderboard</h1>
-        <div className="TabBody flex m-auto mb-3">
+        <div className="TabBody flex flex-col px-5 mb-3">
           <Board title="Daily Individual Leaderboard" rows={rows} />
+          <Board title="Daily Team Leaderboard" rows={rows} />
+          <Board title="Lifetime Individual Leaderboard" rows={rows} />
+          <Board title="Lifetime Individual Leaderboard" rows={rows} />
         </div>
         <Link
           className="rounded-2xl text-black font-bold text-2xl bg-gradient-to-b from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 m-3 p-3"

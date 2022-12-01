@@ -15,7 +15,7 @@ const Tabs = ({ exercises, onChange, active }: TabProps) => {
         {exercises.map((exercise) => {
           return (
             <li
-              className={clsx("m-2 p-2", {
+              className={clsx("m-2 p-2 hover:font-bold", {
                 active: exercise.equals(active),
               })}
               onClick={() => onChange(exercise)}

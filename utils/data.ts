@@ -57,6 +57,22 @@ const data = {
       sets: [],
     }),
     new User({
+      externalId: "5",
+      firstName: "Jonathan",
+      lastName: "Taylor",
+      email: "jonathan.taylor@ramseysolutions.com",
+      password: "password1",
+      teams: [FPUTeam],
+      sets: [
+        new Set({
+          id: "3",
+          reps: 25,
+          date: new Date(),
+          exercise: squat,
+        }),
+      ],
+    }),
+    new User({
       externalId: "3",
       firstName: "Kelley",
       lastName: "Black",

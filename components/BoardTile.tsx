@@ -9,12 +9,11 @@ type BoardTileProps = {
 const BoardTile = ({ user, sets }: BoardTileProps) => {
   const reps = sets.reduce((sum, set) => sum + set.reps, 0);
 
-  // TODO: Convert these to <tr />
   return (
-    <tr className="flex flex-row items-center  bg-zinc-600 rounded-2xl mb-1">
-      <h3 className="my-2 mx-3">{user.name()}</h3>
-      <h3 className="mx-3">{user.team().name}</h3>
-      <h3 className="mx-3">{reps}</h3>
+    <tr>
+      <td>{user.name()}</td>
+      <td>{user.team().name}</td>
+      <td>{reps}</td>
     </tr>
   );
 };

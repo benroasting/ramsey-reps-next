@@ -13,9 +13,10 @@ export type BoardProps = {
 };
 
 const Board = ({ rows, title }: BoardProps) => {
+  const heading = ["Name", "Team", "Reps"];
   // TODO: Convert this to <table /> with <th />
   return (
-    <table className=" bg-zinc-700 rounded-2xl p-2 mb-4">
+    <table className="bg-zinc-700 rounded-2xl p-2 mb-4 w-1/2">
       <thead className="">
         <tr className="p-3 font-bold text-lg mb-1">{title}</tr>
         <tr>

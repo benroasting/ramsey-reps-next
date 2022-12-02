@@ -11,7 +11,7 @@ type TabProps = {
 const Tabs = ({ exercises, onChange, active }: TabProps) => {
   return (
     <div className="TabContainer">
-      <ul className="TabNav flex justify-center mb-4">
+      <ul className="TabNav flex justify-center mb-2">
         {exercises.map((exercise) => {
           return (
             <li

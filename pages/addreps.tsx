@@ -3,11 +3,9 @@ import React from "react";
 
 export default function addReps() {
   return (
-    <div className="m-0">
-      <Link
-        className="rounded-2xl text-green-400 font-bold text-2xl border-1 border-solid border-green-400"
-        href="/add-reps"
-      >
+    <div className="flex m-0">
+      <input></input>
+      <Link className="border-1 border-green-400" href="/add-reps">
         Clear
       </Link>
       <Link

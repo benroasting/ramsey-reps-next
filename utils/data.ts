@@ -1,5 +1,13 @@
 import { Team, User, Exercise, Set } from "./../models";
 
+const today = new Date();
+
+const yesterday = new Date();
+yesterday.setDate(today.getDate() - 1);
+
+const lastWeek = new Date();
+lastWeek.setDate(today.getDate() - 7);
+
 const FPUTeam = new Team({
   id: "1",
   name: "FPU",
@@ -42,8 +50,23 @@ const data = {
         new Set({
           id: "1",
           reps: 10,
-          date: new Date(),
+          date: today,
           exercise: pushUp,
+          userExternalId: "1",
+        }),
+        new Set({
+          id: "2",
+          reps: 20,
+          date: yesterday,
+          exercise: pushUp,
+          userExternalId: "1",
+        }),
+        new Set({
+          id: "3",
+          reps: 50,
+          date: lastWeek,
+          exercise: pushUp,
+          userExternalId: "1",
         }),
       ],
     }),
@@ -54,7 +77,29 @@ const data = {
       email: "rob.carr@ramseysolutions.com",
       password: "password1",
       teams: [FPUTeam],
-      sets: [],
+      sets: [
+        new Set({
+          id: "4",
+          reps: 20,
+          date: today,
+          exercise: pushUp,
+          userExternalId: "2",
+        }),
+        new Set({
+          id: "5",
+          reps: 20,
+          date: today,
+          exercise: squat,
+          userExternalId: "2",
+        }),
+        new Set({
+          id: "6",
+          reps: 20,
+          date: today,
+          exercise: sitUp,
+          userExternalId: "2",
+        }),
+      ],
     }),
     new User({
       externalId: "5",
@@ -65,10 +110,18 @@ const data = {
       teams: [FPUTeam],
       sets: [
         new Set({
-          id: "3",
+          id: "7",
           reps: 25,
-          date: new Date(),
+          date: today,
           exercise: squat,
+          userExternalId: "5",
+        }),
+        new Set({
+          id: "8",
+          reps: 7,
+          date: today,
+          exercise: pushUp,
+          userExternalId: "5",
         }),
       ],
     }),
@@ -79,7 +132,15 @@ const data = {
       email: "kelley.black@ramseysolutions.com",
       password: "password1",
       teams: [FPUTeam],
-      sets: [],
+      sets: [
+        new Set({
+          id: "9",
+          reps: 28,
+          date: today,
+          exercise: squat,
+          userExternalId: "3",
+        }),
+      ],
     }),
     new User({
       externalId: "4",
@@ -90,10 +151,18 @@ const data = {
       teams: [SmartDollarTeam],
       sets: [
         new Set({
-          id: "1",
+          id: "10",
           reps: 50,
-          date: new Date(),
+          date: today,
           exercise: sitUp,
+          userExternalId: "6",
+        }),
+        new Set({
+          id: "11",
+          reps: 100,
+          date: yesterday,
+          exercise: sitUp,
+          userExternalId: "6",
         }),
       ],
     }),

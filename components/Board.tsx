@@ -17,10 +17,10 @@ const Board = ({ rows, title }: BoardProps) => {
   // TODO: Convert this to <table /> with <th />
   return (
     <table className="bg-zinc-700 rounded-2xl p-2 mb-4 w-1/2">
-      <thead className="">
-        <tr className="p-3 font-bold text-lg mb-1">{title}</tr>
+      <thead>
+        <tr className="p-3 font-bold text-lg mb-1 text-center">{title}</tr>
         <tr>
-          <th className="">Name</th>
+          <th className="text-left">Name</th>
           <th className="">Team</th>
           <th className="">Reps</th>
         </tr>

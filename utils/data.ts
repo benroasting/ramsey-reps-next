@@ -140,6 +140,13 @@ const data = {
           exercise: squat,
           userExternalId: "3",
         }),
+        new Set({
+          id: "12",
+          reps: 30,
+          date: today,
+          exercise: sitUp,
+          userExternalId: "3",
+        }),
       ],
     }),
     new User({

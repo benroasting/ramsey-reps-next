@@ -1,0 +1,8 @@
+.tableRows {
+  background-color: gray;
+
+  &::after {
+    content: "";
+    border-bottom: 1px solid black;
+  }
+}

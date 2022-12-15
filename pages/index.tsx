@@ -50,6 +50,8 @@ export default function Home() {
   const dailyRows = new ExerciseSearch(exercise, data.users)
     .since(beginningOfDay)
     .toList();
+  console.log(dailyRows);
+  const dailyRank = dailyRows.sort();
   const lifetimeRows = new ExerciseSearch(exercise, data.users).toList();
 
   // const individualDailyRows = data.users.map((user) => ({

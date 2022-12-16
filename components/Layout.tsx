@@ -36,7 +36,7 @@ export default function Layout({
             </div>
           </nav>
         </header>
-        <main className="container m-auto px-4">{children}</main>
+        <main className="m-auto px-4">{children}</main>
       </div>
     </>
   );
